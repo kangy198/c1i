@@ -1,0 +1,15 @@
+html {
+	color: black; 
+
+	font-size: 18px;
+
+    font-family: 'helvetica', sans-serif;
+    
+	background: pink;
+
+}
+
+body {
+    line-height: 1.6;
+    margin-top: 20px; 
+}
