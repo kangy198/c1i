@@ -19,6 +19,10 @@ html {
 	font-style: normal;
 	}
 }
+
+#big-image {
+
+}
 .audio-container {
 	display: flex;
 	justify-content: center;
