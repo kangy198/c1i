@@ -4,12 +4,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/global.css">
   <title>Entry 2</title>
+  <script>
+    function setNewImage(){
+        document.getElementById("eyes-change").src = "../images/eyes_2.png"
+    }
+    function setOldImage(){
+        document.getElementById("eyes-change").src = "../images/eyes.png"
+    }
+    </script>
 </head>
 
 <body>
-    <h1>Diary</h1>
-    <img src="../images/eyes.png" alt="Eyes inside hands">
-    <h2> Day 2 - Getting to Know You </h2>
+    <header id="site-header">
+      <h1>Day 2</h1>
+    </header>
+    
+    <header id="big-image"
+      <div class="change-container">
+        <img id="eyes-change" 
+        class="change-item" 
+        onmouseover="setNewImage()" 
+        onmouseout="setOldImage()" 
+      src="../images/eyes.png" alt="Eyes on hands"> 
+     </div>
+    </header> 
+    
+     <!-- <header id="big-image"> 
+      <img src="../images/eyes.png" alt="Eyes inside hands">
+    </header>  -->
+
+    <header id="titles">
+      <h2>Getting to Know You </h2>
+    </header>
+    
+      <h3>
+        As the relationship progresses beyond the initial attraction, you begin on a journey of discovery. You start to spend quality time together, engaging in various activities and conversations to learn more about each other. This stage of relationship involves sharing personal stories, values, beliefs, and aspirations, deepening the bond and understanding between each other. It's a period of exploration and curiosity as you uncover the layers of personalities.
+      </h3>
     <a href="../index.html">Back to home page</a>
 </body>
 </html>
