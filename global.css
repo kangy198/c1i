@@ -1,10 +1,13 @@
 @import url('Silkscreen/stylesheet.css');
+@import url('Edu_AU_VIC_WA_NT_Guides/stylesheet.css');
+
 html {
 	color: black; 
 
 	font-size: 18px;
 
     font-family: 'helvetica', sans-serif;
+	text-align: left;
     
 	background: pink;
 	.silkscreen-regular {
@@ -18,11 +21,39 @@ html {
  	font-weight: 700;
 	font-style: normal;
 	}
-}
 
+	/* .Edu_AU_VIC_WA_Guides { 
+  	font-family: "Playwrite US Modern", cursive;
+  	font-optical-sizing: auto;
+  	font-weight: 700;
+  	font-style: normal;
+	}
+	*/
+
+}
+#site-header {
+	text-align: center;
+	font-size: 50px;
+}
 #big-image {
-
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
+
+#change-container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+#titles {
+	text-align: center;
+	font-size: 25px;
+}
+
+
 .audio-container {
 	display: flex;
 	justify-content: center;
@@ -37,7 +68,6 @@ body {
 	text-align: center;
 }
     font-family: "Silkscreen";
-    line-height: 1.6;
-    margin-top: 20px; 
+    line-height: 1.0;
+    margin-top: 10px; 
 }
-
