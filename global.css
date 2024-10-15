@@ -1,3 +1,4 @@
+@import url('Silkscreen/stylesheet.css');
 html {
 	color: black; 
 
@@ -18,15 +19,21 @@ html {
 	font-style: normal;
 	}
 }
-
+.audio-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
 body {
     .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+	text-align: center;
 }
     font-family: "Silkscreen";
     line-height: 1.6;
     margin-top: 20px; 
 }
+
