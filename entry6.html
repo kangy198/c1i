@@ -4,6 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="global.css">
   <title>Entry 6</title>
+  <script>
+    function setNewImage(){
+        document.getElementById("cloudy-day").src = "images/cloudy.png"
+    }
+    function setOldImage(){
+        document.getElementById("cloudy-day").src = "images/scale.png"
+    }
+    </script>
 </head>
 
 <body>
@@ -12,7 +20,12 @@
     </header>
 
     <header id="big-image">
-      <img src="images/scale.png" alt= "woman and man sitting on an unbalanced scale" >
+        <img id="cloudy-day" 
+        class="change-item" 
+        onmouseover="setNewImage()" 
+        onmouseout="setOldImage()" 
+      src="images/scale.png" alt="woman and man sitting on an unbalanced scale"> 
+     </div>
     </header>
 
     <header id="titles">
