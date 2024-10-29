@@ -10,6 +10,14 @@
  
 
 <title>Entry 1</title>
+<script>
+  function setNewImage(){
+      document.getElementById("eyes-beam").src = "images/heartBeam.png"
+  }
+  function setOldImage(){
+      document.getElementById("eyes-beam").src = "images/cupid.png"
+  }
+  </script>
 </head>
 
 <body>
@@ -18,7 +26,13 @@
     </header>
 
     <header id="big-image">
-      <img src="images/cupid.png" alt= "Cupid Shooting an arrow to a girl looking through a mirror" >
+      <div class="change-container">
+        <img id="eyes-beam" 
+        class="change-item" 
+        onmouseover="setNewImage()" 
+        onmouseout="setOldImage()" 
+      src="images/cupid.png" alt="Cupid Shooting an arrow to a girl looking through a mirror"> 
+     </div>
     </header>
 
     <header id="titles">
