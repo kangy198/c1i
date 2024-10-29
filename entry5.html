@@ -4,6 +4,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="global.css">
   <title>Entry 5</title>
+  <script>
+    function setNewImage(){
+        document.getElementById("magic-happens").src = "images/magic.png"
+    }
+    function setOldImage(){
+        document.getElementById("magic-happens").src = "images/worship_love.png"
+    }
+    </script>
 </head>
 
 <body>
@@ -12,7 +20,13 @@
     </header>
 
     <header id="big-image">
-      <img src="images/worship_love.png" alt= "arms holding up heart with rainbows and butterflies" >
+      <div class="change-container">
+        <img id="magic-happens" 
+        class="change-item" 
+        onmouseover="setNewImage()" 
+        onmouseout="setOldImage()" 
+      src="images/worship_love.png" alt="arms holding up heart with rainbows and butterflies"> 
+     </div>
     </header>
 
     <header id="titles">
