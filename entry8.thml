@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="global.css">
+  <title>Entry 8</title>
+  <script>
+    function setNewImage(){
+        document.getElementById("mature-love").src = "images/rose.png"
+    }
+    function setOldImage(){
+        document.getElementById("mature-love").src = "images/matureLove.png"
+    }
+    </script>
+</head>
+
+<body>
+    <header id="site-header">
+      <h1>Day 8</h1>
+    </header>
+
+    <header id="big-image">
+        <img id="mature-love" 
+        class="change-item" 
+        onmouseover="setNewImage()" 
+        onmouseout="setOldImage()" 
+      src="images/growth.png" alt="Lovers in a locket with flower petals around"> 
+     </div>
+    </header>
+
+    <header id="titles">
+      <h2>Mature Love</h2>
+    </header>
+
+      <h3>
+        If you thought that young love was wonderful, wait until you’ve experienced mature love. Couples who have been together long enough to work though the first five stages of a relationship know the difference between infatuated love and mature love. Infatuation is built on obsession, sexual longing, and jealousy — while mature love comes from comfort, communication, sexual chemistry, and security. The most difficult part of this stage is doing the maintenance necessary for such a deep level of communication and intimacy. It’s easy to regress back into a lower stage once a crisis evolves, so constant effort and attention is necessary.
+
+        
+      </h3>
+    <a href="index.html">Back to home page</a>
+</body>
+</html>
