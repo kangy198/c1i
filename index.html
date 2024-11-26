@@ -7,18 +7,19 @@
 </head>
 
 <style>
-  .nav {
-    background-color: yellow; 
-  list-style-type: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+ .flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
 }
 
-.nav li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
+.flex-container > div {
+  background-color: #babab9f8;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
 </style>
 
@@ -33,7 +34,20 @@
       <p>
        Welcome:)
       </p>
-    <ul>
+      <div class="flex-container">
+        <div><a href="entry1.html" class="nav-link"> First Entry</a></div>
+        <div><a href="entry2.html" class="nav-link"> Second Entry </a></div>
+        <div><a href="entry3.html" class="nav-link"> Third Entry </div>  
+        <div><a href="entry4.html" class="nav-link"> Fourth Entry</div>
+        <div><a href="entry5.html" class="nav-link"> Fifth Entry</div>
+        <div><a href="entry6.html" class="nav-link"> Sixth Entry</div>  
+        <div><a href="entry7.html" class="nav-link"> Seventh Entry</div>
+        <div><a href="entry8.html" class="nav-link"> Eighth Entry</div>
+        <div><a href="entry9.html" class="nav-link"> Ninth Entry</div>  
+        <div><a href="entry10.html" class="nav-link"> The End...?</div>
+      </div>
+     <!--  
+     <ul>
       <li><a href="entry1.html" class="nav-link">First Entry</a></li>
       <li> <a href="entry2.html" class="nav-link"> Second Entry </a></li>
       <li> <a href="entry3.html" class="nav-link"> Third Entry </a> </li>
@@ -44,6 +58,6 @@
       <li> <a href="entry8.html" class="nav-link"> Eighth Entry </a> </li>
       <li> <a href="entry9.html" class="nav-link"> Ninth Entry </a> </li>
       <li> <a href="entry10.html" class="nav-link"> Ending </a> </li>
-    </ul>
+    </ul> -->
   </body>
 </html>
