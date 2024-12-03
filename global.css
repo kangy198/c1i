@@ -33,7 +33,7 @@ html {
 /* applying new typeface */
 body {
 	font-family: "Edu AU VIC WA NT Guides", cursive;
-	background-image: url('notebook.png');
+	background-image: url('images/notebook.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
@@ -100,6 +100,9 @@ h3 {
 
 }
 
+.star {
+	size: 10%;
+}
 
 .rain {
 	position: absolute;
