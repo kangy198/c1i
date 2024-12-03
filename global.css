@@ -37,6 +37,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
+	cursor: url('images/pen.png'), auto;
 }
 
 #site-header {
