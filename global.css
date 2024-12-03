@@ -44,7 +44,6 @@ body {
 	text-align: center;
 	font-size: 45px;
 	color: #fc2184;
-	/* background-color: rgb(228, 150, 238); */
 	padding:9px;
 	padding-top: 20px;
 	margin:5px;
@@ -141,7 +140,7 @@ h3 {
 }
 
 .blinking-text {
-    display: inline-block; /* To make sure it's treated as a block element */
+    display: inline-block; 
     animation: blink 1s infinite;
 }
 
