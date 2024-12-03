@@ -1,228 +1,180 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
-
 html {
-	color: black; 
-
-	font-size: 18px;
-
-    font-family: 'helvetica', sans-serif;
-	text-align: center;
-    
-	background: pink;
-	.silkscreen-regular {
- 	font-family: "Silkscreen", sans-serif;
-  	font-weight: 400;
- 	font-style: normal;
-	}
-
-	.silkscreen-bold {
-  	font-family: "Silkscreen", sans-serif;
- 	font-weight: 700;
-	font-style: normal;
-	}
-
-	/* .Edu_AU_VIC_WA_Guides { 
-  	font-family: "Playwrite US Modern", cursive;
-  	font-optical-sizing: auto;
-  	font-weight: 700;
-  	font-style: normal;
-	}
-	*/
-
+    cursor: url('images/pen.png'), auto;
+    height: 100%;
+    background: pink;
 }
-/* applying new typeface */
+
 body {
-	font-family: "Edu AU VIC WA NT Guides", cursive;
-	background-image: url('images/notebook.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center top;
-	cursor: url('images/pen.png'), auto;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    background-image: url('images/notebook.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    cursor: url('images/pen.png'), auto;
+    position: relative; /* Make sure the content stays above the video */
+    z-index: 1;
+    padding-top: 100px; /* Adds padding to prevent content being hidden by the video */
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;   /* Makes the video cover the width */
+    height: 50%;   /* Restrict the height to 50% of the viewport */
+    object-fit: cover;
+    z-index: -1;   /* Places the video behind the content */
 }
 
 #site-header {
-	text-align: center;
-	font-size: 45px;
-	color: #fc2184;
-	/* background-color: rgb(228, 150, 238); */
-	padding:9px;
-	padding-top: 20px;
-	margin:5px;
-
+    text-align: center;
+    font-size: 45px;
+    color: #fc2184;
+    padding: 9px;
+    padding-top: 20px;
+    margin: 5px;
 }
+
 #big-image {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-
-#change-container {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-#titles {
-	text-align: center;
-	font-size: 25px;
-	color: #fc2184;
-}
-
-
-.audio-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
-body {
-    .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-	text-align: center;
-	z-index: 1;
-}
-    font-family: "Silkscreen";
-    line-height: 1.0;
-    margin-top: 10px; 
 }
 
+#change-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
+#titles {
+    text-align: center;
+    font-size: 25px;
+    color: #fc2184;
+}
 
 h3 {
-	font-family: "Edu AU VIC WA NT Guides";
-	margin-left: 300px;
-	margin-right: 300px;
-	margin-bottom: 80px;
-	text-align: center;
-	color:#0d7ea3;
+    font-family: "Edu AU VIC WA NT Guides";
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #0d7ea3;
 }
 
 .homepage {
-	text-align: center;
-	justify-content: space-between;
+    text-align: center;
+    justify-content: space-between;
 }
-
-#myVideo {
-	position: fixed;
-	top: 0;
-	left: 0;
-	min-width: 100%;
-	min-height: 100%;
-	object-fit: cover;
-	z-index: -1;
-  }
 
 .star {
-	size: 10%;
+    size: 10%;
 }
 
-.dot{
-	width:35px;
-	height:35px;
-	position:absolute;
-	background: url(https://image.ibb.co/kyUHab/rose.png);
-	background-size: 100% 100%;
-  }
+.dot {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: url(https://image.ibb.co/kyUHab/rose.png);
+    background-size: 100% 100%;
+}
 
-  @keyframes blink {
+@keyframes blink {
     0% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
 }
 
 .blinking-text {
-    display: inline-block; /* To make sure it's treated as a block element */
+    display: inline-block;
     animation: blink 1s infinite;
 }
 
 .rain {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 2;
-  }
-  
-  .rain.back-row {
-	display: none;
-	z-index: 1;
-	bottom: 60px;
-	opacity: 0.5;
-  }
-  
-  
-  .drop {
-	position: absolute;
-	bottom: 100%;
-	width: 15px;
-	height: 120px;
-	pointer-events: none;
-	animation: drop 0.5s linear infinite;
-  }
-  
-  @keyframes drop {
-	0% {
-	  transform: translateY(0vh);
-	}
-	75% {
-	  transform: translateY(90vh);
-	}
-	100% {
-	  transform: translateY(90vh);
-	}
-  }
-  
-  .stem {
-	width: 1px;
-	height: 60%;
-	margin-left: 7px;
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
-	animation: stem 0.5s linear infinite;
-  }
-  
-  @keyframes stem {
-	0% {
-	  opacity: 1;
-	}
-	65% {
-	  opacity: 1;
-	}
-	75% {
-	  opacity: 0;
-	}
-	100% {
-	  opacity: 0;
-	}
-  }
-  
-  @keyframes splat {
-	0% {
-	  opacity: 1;
-	  transform: scale(0);
-	}
-	80% {
-	  opacity: 1;
-	  transform: scale(0);
-	}
-	90% {
-	  opacity: 0.5;
-	  transform: scale(1);
-	}
-	100% {
-	  opacity: 0;
-	  transform: scale(1.5);
-	}
-  }
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.rain.back-row {
+    display: none;
+    z-index: 1;
+    bottom: 60px;
+    opacity: 0.5;
+}
+
+.drop {
+    position: absolute;
+    bottom: 100%;
+    width: 15px;
+    height: 120px;
+    pointer-events: none;
+    animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(0vh);
+    }
+    75% {
+        transform: translateY(90vh);
+    }
+    100% {
+        transform: translateY(90vh);
+    }
+}
+
+.stem {
+    width: 1px;
+    height: 60%;
+    margin-left: 7px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+    animation: stem 0.5s linear infinite;
+}
+
+@keyframes stem {
+    0% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes splat {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    90% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+
 
 
