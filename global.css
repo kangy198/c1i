@@ -33,7 +33,7 @@ html {
 /* applying new typeface */
 body {
 	font-family: "Edu AU VIC WA NT Guides", cursive;
-	background-image: url('images/notebook.png');
+	background-image: url('notebook.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
