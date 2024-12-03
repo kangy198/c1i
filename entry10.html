@@ -12,26 +12,32 @@
         document.getElementById("new-attempt").src = "images/broken_heart.png"
     }
     </script>
-    <style>
-      @keyframes blink {
-          0% {
-              opacity: 1;
-          }
-    
-          50% {
-              opacity: 0;
-          }
-    
-          100% {
-              opacity: 1;
-          }
-      }
-    
-      .blinking-text {
-          animation: blink 1s infinite;
-      }
-    </style>
 </head>
+
+<style>
+  html{
+    cursor: url('images/pen.png'),auto;
+    height: 100%;
+  }
+
+  @keyframes blink {
+      0% {
+          opacity: 1;
+      }
+
+      50% {
+          opacity: 0;
+      }
+
+      100% {
+          opacity: 1;
+      }
+  }
+
+  .blinking-text {
+      animation: blink 1s infinite;
+  }
+</style>
 
 <body>
     <header id="site-header">
