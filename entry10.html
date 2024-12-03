@@ -12,6 +12,25 @@
         document.getElementById("new-attempt").src = "images/broken_heart.png"
     }
     </script>
+    <style>
+      @keyframes blink {
+          0% {
+              opacity: 1;
+          }
+    
+          50% {
+              opacity: 0;
+          }
+    
+          100% {
+              opacity: 1;
+          }
+      }
+    
+      .blinking-text {
+          animation: blink 1s infinite;
+      }
+    </style>
 </head>
 
 <body>
@@ -31,10 +50,16 @@
     <header id="titles">
       <h2>
          Try Again? <br>
-         >Yes <a href="entry1.html"></a> <br> 
+         <div class="blinking-text">
+         >
+         </div>
+         Yes <a href="entry1.html"></a> <br> 
          No</h2>
     </header>
 
     <a href="index.html">Back to home page</a>
 </body>
 </html>
+
+
+</head>
