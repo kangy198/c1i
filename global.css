@@ -125,6 +125,25 @@ h3 {
 	background-size: 100% 100%;
   }
 
+  @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking-text {
+    display: inline-block; /* To make sure it's treated as a block element */
+    animation: blink 1s infinite;
+}
+
 .rain {
 	position: absolute;
 	left: 0;
