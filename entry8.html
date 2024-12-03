@@ -1,25 +1,26 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="global.css">
-  <script src="flowers.js"></script>
-
+  <script src="flowers.js"></script> 
+  
   <title>Entry 8</title>
   <script>
     function setNewImage(){
-        document.getElementById("mature-love").src = "images/rose.png"
+        document.getElementById("mature-love").src = "images/rose.png";
     }
     function setOldImage(){
-        document.getElementById("mature-love").src = "images/matureLove.png"
+        document.getElementById("mature-love").src = "images/matureLove.png";
     }
-    </script>
-    
+  </script>
+  
 </head>
 
 <style>
   html{
-     cursor: url('images/pen.png'),auto;
+     cursor: url('images/pen.png'), auto;
      height: 100%;
    }
 </style>
@@ -29,36 +30,65 @@
       <h1>Day 8</h1>
     </header>
 
-
     <header id="big-image">
         <img id="mature-love" 
         class="change-item" 
         onmouseover="setNewImage()" 
         onmouseout="setOldImage()" 
-      src="images/matureLove.png" alt="Lovers in a locket with flower petals around"> 
-     </div>
+        src="images/matureLove.png" alt="Lovers in a locket with flower petals around"> 
     </header>
 
     <header id="titles">
       <h2>Mature Love</h2>
     </header>
 
-      <h3>
+    <h3>
         If you thought that young love was wonderful, wait until you’ve experienced mature love. Couples who have been together long enough to work though the first five stages of a relationship know the difference between infatuated love and mature love. Infatuation is built on obsession, sexual longing, and jealousy — while mature love comes from comfort, communication, sexual chemistry, and security. The most difficult part of this stage is doing the maintenance necessary for such a deep level of communication and intimacy. It’s easy to regress back into a lower stage once a crisis evolves, so constant effort and attention is necessary.
-      </h3>
+    </h3>
 
-      <div class="homepage">
-        <a href="entry7.html"> 
-          <div class="star">
-            <input type="image" src="images/left_arrow.png" height="10%" width="10%">
-          </div>
-        </a>
-        <a href="index.html">Back to home page</a>
-        <a href="entry9.html"> 
-          <div class="star">
-            <input type="image" src="images/right_arrow.png" height="10%" width="10%"> 
-          </div>
-        </a>
+    <div class="homepage">
+      <a href="entry7.html"> 
+        <div class="star">
+          <input type="image" src="images/left_arrow.png" height="10%" width="10%">
         </div>
+      </a>
+      <a href="index.html">Back to home page</a>
+      <a href="entry9.html"> 
+        <div class="star">
+          <input type="image" src="images/right_arrow.png" height="10%" width="10%"> 
+        </div>
+      </a>
+    </div>
+
+    <div id="container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CustomEase.min.js"></script> 
+    
+    <script>
+      TweenLite.set("#container", {perspective: 600});
+      TweenLite.set("img", {xPercent: "-50%", yPercent: "-50%"});
+
+      var total = 30;
+      var warp = document.getElementById("container"),
+          w = window.innerWidth, 
+          h = window.innerHeight;
+
+      for (i = 0; i < total; i++) {
+        var Div = document.createElement('div');
+        TweenLite.set(Div, {attr: {class: 'dot'}, x: R(0, w), y: R(-200, -150), z: R(-200, 200)});
+        warp.appendChild(Div);
+        animm(Div);
+      }
+
+      function animm(elm) {
+        TweenMax.to(elm, R(6, 15), {y: h + 100, ease: Linear.easeNone, repeat: -1, delay: -15});
+        TweenMax.to(elm, R(4, 8), {x: '+=100', rotationZ: R(0, 180), repeat: -1, yoyo: true, ease: Sine.easeInOut});
+        TweenMax.to(elm, R(2, 8), {rotationX: R(0, 360), rotationY: R(0, 360), repeat: -1, yoyo: true, ease: Sine.easeInOut, delay: -5});
+      }
+
+      function R(min, max) {
+        return min + Math.random() * (max - min);
+      }
+    </script>
 </body>
-</html>
