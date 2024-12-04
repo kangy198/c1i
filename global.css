@@ -38,6 +38,7 @@ body {
 	background-size: cover;
 	background-position: center top;
 	cursor: url('images/pen.png'), auto;
+	margin-top: -15px;
 }
 
 #site-header {
@@ -45,8 +46,7 @@ body {
 	font-size: 45px;
 	color: #fc2184;
 	padding:9px;
-	padding-top: 20px;
-	margin:5px;
+	padding-top: 90px;
 
 }
 #big-image {
