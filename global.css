@@ -239,19 +239,30 @@ h3 {
         margin-right: 0.5em;
     }
    
-    .kiko-highlight{
-        width: 90%;
-        padding-left: 1em;
-        padding-right: 1em;
-    } 
-   .product-container img {
-        width: 30%;
-        height: auto;
-        margin: 0 2em 2em 0;
-   }
-   .product-container figcaption{
-    text-align: center;
-   }
+    .index-image,
+	.eyes-beam,
+	.eyeschange,
+	.strawberry-kiss,
+	.ribs-open,
+	.magic-happens,
+	.cloudy-day,
+	.blooming-love,
+	.mature-love,
+	.fixing-love
+	.new-attempt{
+		max-width: 40%;
+		max-width: 40%;
+		margin: 0 2em 2em 0;
+
+	}
+	.titles{
+		font-size: 20px;
+	}
+	
+	.body-text{
+		font-size: 12px;
+	}
+
 
 
 }
