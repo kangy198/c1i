@@ -99,12 +99,19 @@ h3 {
 	color:#0d7ea3;
 }
 
+/* page navigation */
+
 .homepage {
 	text-align: center;
-	display: block;
+	display: inline-block;
 	justify-content: space-between;
 }
 
+.star {
+	size: 10%;
+}
+
+/* entry 4 background video */
 #myVideo {
 	position: fixed;
 	top: 0;
@@ -112,11 +119,8 @@ h3 {
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -1;
-  }
-
-.star {
-	size: 10%;
 }
+
 
 .dot{
 	width:35px;
@@ -140,11 +144,8 @@ h3 {
     }
 }
 
-.blinking-text {
-    display: inline-block; 
-    animation: blink 1s infinite;
-}
 
+/* entry 6 rain effects */
 .rain {
 	position: absolute;
 	left: 0;
@@ -224,4 +225,38 @@ h3 {
 	}
   }
 
+  /* entry 10 blinking effect */
+	.blinking-text {
+    display: inline-block; 
+    animation: blink 1s infinite;
+}
 
+  /* responsive design styling */
+
+  @media only screen and (width: 480px) {
+    body{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+   
+    .kiko-highlight{
+        width: 90%;
+        padding-left: 1em;
+        padding-right: 1em;
+    } 
+   .product-container img {
+        width: 30%;
+        height: auto;
+        margin: 0 2em 2em 0;
+   }
+   .product-container figcaption{
+    text-align: center;
+   }
+
+
+}
+
+
+
+@media only screen and (width: 768px) and (max-width: 1280px) {
+}
