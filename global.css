@@ -109,6 +109,7 @@ h3 {
 
 .star {
 	size: 10%;
+	display: inline-block;
 }
 
 /* entry 4 background video */
