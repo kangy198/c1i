@@ -274,4 +274,28 @@ h3 {
         margin-right: 1em;
 	}
 
+	.index-image,
+	.eyes-beam,
+	.eyeschange,
+	.strawberry-kiss,
+	.ribs-open,
+	.magic-happens,
+	.cloudy-day,
+	.blooming-love,
+	.mature-love,
+	.fixing-love
+	.new-attempt{
+		max-width: 80%;
+		max-width: 80%;
+		margin: 0 2em 2em 0;
+
+	}
+	.titles{
+		font-size: 40px;
+	}
+	
+	.body-text{
+		font-size: 20px;
+	}
+
 }
