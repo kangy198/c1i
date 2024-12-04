@@ -41,6 +41,18 @@ body {
 	margin-top: -15px;
 }
 
+#index-header{
+	text-align: center;
+	font-size: 38px;
+	color: #fc2184;
+	padding:9px;
+	padding-top: 90px;
+}
+
+#index-image{
+	padding-top: 100px;
+}
+
 #site-header {
 	text-align: center;
 	font-size: 45px;
@@ -49,6 +61,8 @@ body {
 	padding-top: 90px;
 
 }
+
+
 #big-image {
 	display: block;
 	margin-left: auto;
